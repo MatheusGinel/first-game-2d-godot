@@ -1,0 +1,93 @@
+[gd_scene load_steps=10 format=3 uid="uid://dsnbgjrwroiuo"]
+
+[ext_resource type="Script" path="res://ui/game_ui.gd" id="1_lmhvy"]
+[ext_resource type="Texture2D" uid="uid://h3hxmmmm8yim" path="res://addons/Tiny Swords/UI/Banners/Banner_Horizontal.png" id="1_oaf22"]
+[ext_resource type="Texture2D" uid="uid://8a7l5nx01mci" path="res://addons/Tiny Swords/Resources/Resources/M_Idle_(NoShadow).png" id="3_713g2"]
+
+[sub_resource type="SystemFont" id="SystemFont_u88nm"]
+font_names = PackedStringArray("Georgia")
+subpixel_positioning = 0
+
+[sub_resource type="LabelSettings" id="LabelSettings_ux585"]
+font_size = 50
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_fapc7"]
+texture = ExtResource("1_oaf22")
+texture_margin_left = 32.0
+texture_margin_top = 16.0
+texture_margin_right = 32.0
+texture_margin_bottom = 48.0
+axis_stretch_horizontal = 2
+axis_stretch_vertical = 2
+region_rect = Rect2(32, 48, 128, 128)
+
+[sub_resource type="SystemFont" id="SystemFont_qlpwc"]
+font_names = PackedStringArray("Constantia")
+subpixel_positioning = 0
+
+[sub_resource type="LabelSettings" id="LabelSettings_ams3h"]
+font = SubResource("SystemFont_qlpwc")
+font_size = 50
+font_color = Color(0, 0, 0, 1)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_d7a2i"]
+atlas = ExtResource("3_713g2")
+region = Rect2(32, 48, 72, 56)
+
+[node name="GameUI" type="CanvasLayer"]
+script = ExtResource("1_lmhvy")
+
+[node name="TimerLabel" type="Label" parent="."]
+unique_name_in_owner = true
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -33.0
+offset_top = 29.0
+offset_right = 29.0
+offset_bottom = 52.0
+grow_horizontal = 2
+theme_override_fonts/font = SubResource("SystemFont_u88nm")
+text = "08:50"
+label_settings = SubResource("LabelSettings_ux585")
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Panel" type="Panel" parent="."]
+anchors_preset = 1
+anchor_left = 1.0
+anchor_right = 1.0
+offset_left = -210.0
+offset_top = 19.0
+offset_right = -13.0
+offset_bottom = 108.0
+grow_horizontal = 0
+theme_override_styles/panel = SubResource("StyleBoxTexture_fapc7")
+
+[node name="MeatLabel" type="Label" parent="Panel"]
+unique_name_in_owner = true
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = 6.5
+offset_top = -47.5
+offset_right = 73.5
+offset_bottom = 3.5
+grow_horizontal = 2
+grow_vertical = 2
+text = "50"
+label_settings = SubResource("LabelSettings_ams3h")
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="TextureRect" type="TextureRect" parent="Panel"]
+layout_mode = 0
+offset_left = 27.0
+offset_top = -6.0
+offset_right = 155.0
+offset_bottom = 122.0
+scale = Vector2(0.5, 0.5)
+texture = SubResource("AtlasTexture_d7a2i")

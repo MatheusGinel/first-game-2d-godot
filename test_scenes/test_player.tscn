@@ -1,0 +1,238 @@
+[gd_scene load_steps=5 format=3 uid="uid://bvrtmoy0h1xny"]
+
+[ext_resource type="Texture2D" uid="uid://dabxqoxiqapm8" path="res://addons/Tiny Swords/Factions/Knights/Troops/Warrior/Blue/Warrior_Blue.png" id="1_pk8kf"]
+[ext_resource type="PackedScene" uid="uid://icp7nght7dk0" path="res://player/player.tscn" id="2_4y3mt"]
+[ext_resource type="PackedScene" uid="uid://636rjm2xkndq" path="res://enemies/pawn.tscn" id="3_f1bbg"]
+
+[sub_resource type="LabelSettings" id="LabelSettings_qmplk"]
+line_spacing = 35.0
+
+[node name="TestPlayer" type="Node2D"]
+
+[node name="WarriorBlue" type="Sprite2D" parent="."]
+position = Vector2(-641, 849)
+texture = ExtResource("1_pk8kf")
+flip_h = true
+
+[node name="Label" type="Label" parent="WarriorBlue"]
+offset_left = -647.0
+offset_top = -704.0
+offset_right = -319.0
+offset_bottom = -681.0
+rotation = -0.00171126
+scale = Vector2(3.44925, 3.38458)
+text = "idle
+"
+
+[node name="Label" type="Label" parent="WarriorBlue/Label"]
+layout_mode = 0
+offset_left = -650.0
+offset_top = -618.0
+offset_right = -322.0
+offset_bottom = -595.0
+rotation = -0.00171126
+scale = Vector2(3.44925, 3.38458)
+text = "idle
+"
+
+[node name="Label9" type="Label" parent="WarriorBlue"]
+offset_left = -486.0
+offset_top = -825.0
+offset_right = -158.0
+offset_bottom = -802.0
+rotation = -0.00171126
+scale = Vector2(3.44925, 3.38458)
+text = "0           1           2           3           4            5
+"
+
+[node name="Label" type="Label" parent="WarriorBlue/Label9"]
+layout_mode = 0
+offset_left = -650.0
+offset_top = -618.0
+offset_right = -322.0
+offset_bottom = -595.0
+rotation = -0.00171126
+scale = Vector2(3.44925, 3.38458)
+text = "idle
+"
+
+[node name="Label10" type="Label" parent="WarriorBlue"]
+offset_left = 564.0
+offset_top = -744.0
+offset_right = 585.0
+offset_bottom = -315.0
+rotation = -0.00171126
+scale = Vector2(3.44925, 3.38458)
+text = "0 1 2 3 4 5 6 7
+"
+label_settings = SubResource("LabelSettings_qmplk")
+autowrap_mode = 2
+
+[node name="Label" type="Label" parent="WarriorBlue/Label10"]
+layout_mode = 0
+offset_left = -650.0
+offset_top = -618.0
+offset_right = -322.0
+offset_bottom = -595.0
+rotation = -0.00171126
+scale = Vector2(3.44925, 3.38458)
+text = "idle
+"
+
+[node name="Label2" type="Label" parent="WarriorBlue"]
+offset_left = -660.0
+offset_top = -530.0
+offset_right = -332.0
+offset_bottom = -507.0
+rotation = -0.00171126
+scale = Vector2(3.44925, 3.38458)
+text = "run"
+
+[node name="Label" type="Label" parent="WarriorBlue/Label2"]
+layout_mode = 0
+offset_left = -650.0
+offset_top = -618.0
+offset_right = -322.0
+offset_bottom = -595.0
+rotation = -0.00171126
+scale = Vector2(3.44925, 3.38458)
+text = "idle
+"
+
+[node name="Label3" type="Label" parent="WarriorBlue"]
+offset_left = -922.0
+offset_top = -331.0
+offset_right = -594.0
+offset_bottom = -308.0
+rotation = -0.00171126
+scale = Vector2(3.44925, 3.38458)
+text = "attack_side_1
+"
+
+[node name="Label" type="Label" parent="WarriorBlue/Label3"]
+layout_mode = 0
+offset_left = -650.0
+offset_top = -618.0
+offset_right = -322.0
+offset_bottom = -595.0
+rotation = -0.00171126
+scale = Vector2(3.44925, 3.38458)
+text = "idle
+"
+
+[node name="Label4" type="Label" parent="WarriorBlue"]
+offset_left = -929.0
+offset_top = -142.0
+offset_right = -601.0
+offset_bottom = -119.0
+rotation = -0.00171126
+scale = Vector2(3.44925, 3.38458)
+text = "attack_side_2"
+
+[node name="Label" type="Label" parent="WarriorBlue/Label4"]
+layout_mode = 0
+offset_left = -650.0
+offset_top = -618.0
+offset_right = -322.0
+offset_bottom = -595.0
+rotation = -0.00171126
+scale = Vector2(3.44925, 3.38458)
+text = "idle
+"
+
+[node name="Label5" type="Label" parent="WarriorBlue"]
+offset_left = -943.0
+offset_top = 53.0
+offset_right = -615.0
+offset_bottom = 102.0
+rotation = -0.00171126
+scale = Vector2(3.44925, 3.38458)
+text = "attack_down_1"
+
+[node name="Label" type="Label" parent="WarriorBlue/Label5"]
+layout_mode = 0
+offset_left = -650.0
+offset_top = -618.0
+offset_right = -322.0
+offset_bottom = -595.0
+rotation = -0.00171126
+scale = Vector2(3.44925, 3.38458)
+text = "idle
+"
+
+[node name="Label6" type="Label" parent="WarriorBlue"]
+offset_left = -950.0
+offset_top = 241.0
+offset_right = -622.0
+offset_bottom = 264.0
+rotation = -0.00171126
+scale = Vector2(3.44925, 3.38458)
+text = "attack_down_2"
+
+[node name="Label" type="Label" parent="WarriorBlue/Label6"]
+layout_mode = 0
+offset_left = -650.0
+offset_top = -618.0
+offset_right = -322.0
+offset_bottom = -595.0
+rotation = -0.00171126
+scale = Vector2(3.44925, 3.38458)
+text = "idle
+"
+
+[node name="Label7" type="Label" parent="WarriorBlue"]
+offset_left = -867.0
+offset_top = 430.0
+offset_right = -539.0
+offset_bottom = 453.0
+rotation = -0.00171126
+scale = Vector2(3.44925, 3.38458)
+text = "attack_up_1
+"
+
+[node name="Label" type="Label" parent="WarriorBlue/Label7"]
+layout_mode = 0
+offset_left = -650.0
+offset_top = -618.0
+offset_right = -322.0
+offset_bottom = -595.0
+rotation = -0.00171126
+scale = Vector2(3.44925, 3.38458)
+text = "idle
+"
+
+[node name="Label8" type="Label" parent="WarriorBlue"]
+offset_left = -854.0
+offset_top = 625.0
+offset_right = -526.0
+offset_bottom = 648.0
+rotation = -0.00171126
+scale = Vector2(3.44925, 3.38458)
+text = "attack_up_2
+"
+
+[node name="Label" type="Label" parent="WarriorBlue/Label8"]
+layout_mode = 0
+offset_left = -650.0
+offset_top = -618.0
+offset_right = -322.0
+offset_bottom = -595.0
+rotation = -0.00171126
+scale = Vector2(3.44925, 3.38458)
+text = "idle
+"
+
+[node name="Player" parent="." instance=ExtResource("2_4y3mt")]
+position = Vector2(211, 197)
+
+[node name="Pawn" parent="." instance=ExtResource("3_f1bbg")]
+position = Vector2(364, 313)
+
+[node name="Pawn2" parent="." instance=ExtResource("3_f1bbg")]
+position = Vector2(576, 368)
+
+[node name="Pawn3" parent="." instance=ExtResource("3_f1bbg")]
+position = Vector2(311, 457)
+
+[node name="Pawn4" parent="." instance=ExtResource("3_f1bbg")]
+position = Vector2(790, 347)
